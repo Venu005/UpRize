@@ -135,25 +135,21 @@ export function AppSidebar() {
             </SidebarMenu>
           </SidebarGroupContent>
           <Separator />
-          <SidebarContent>
-            <SidebarGroup>
-              <SidebarGroupLabel>Leaderboards</SidebarGroupLabel>
-              <SidebarGroupContent>
-                <SidebarMenu>
-                  {leaderboardItems.map((item) => (
-                    <SidebarMenuItem key={item.title}>
-                      <SidebarMenuButton asChild>
-                        <a href={item.url}>
-                          <item.icon />
-                          <span>{item.title}</span>
-                        </a>
-                      </SidebarMenuButton>
-                    </SidebarMenuItem>
-                  ))}
-                </SidebarMenu>
-              </SidebarGroupContent>
-            </SidebarGroup>
-          </SidebarContent>
+          <SidebarGroupLabel>Leaderboards</SidebarGroupLabel>
+          <SidebarGroupContent>
+            <SidebarMenu>
+              {leaderboardItems.map((item) => (
+                <SidebarMenuItem key={item.title}>
+                  <SidebarMenuButton asChild>
+                    <a href={item.url}>
+                      <item.icon />
+                      <span>{item.title}</span>
+                    </a>
+                  </SidebarMenuButton>
+                </SidebarMenuItem>
+              ))}
+            </SidebarMenu>
+          </SidebarGroupContent>
         </SidebarGroup>
       </SidebarContent>
 

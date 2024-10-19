@@ -35,6 +35,7 @@ import {
   TwitterLogoIcon,
 } from "@radix-ui/react-icons";
 import { Separator } from "./ui/separator";
+import Link from "next/link";
 
 // Menu items.
 const items = [
@@ -111,10 +112,11 @@ export function AppSidebar() {
         {state === "expanded" && (
           <div className="flex justify-center w-full">
             <Button
+              asChild
               className="w-4/5 text-green-700 font-bold"
               variant={"sidebar"}
             >
-              Edit Profile
+              <Link href="/dashboard/edit-profile">Edit Profile</Link>
             </Button>
           </div>
         )}

@@ -96,11 +96,11 @@ export function AppSidebar() {
                   <AvatarImage src="https://github.com/shadcn.png" />
                   <AvatarFallback>CN</AvatarFallback>
                 </Avatar>
-                <div className="flex flex-col">
-                  <span className="truncate">Venusai Yalamanchili</span>
-                  <span className="text-blue-400 font-extrabold">
+                <div className="flex flex-col truncate">
+                  <p className="">Venusai Yalamanchili</p>
+                  <p className="text-blue-400 font-extrabold text-sm">
                     @venusai17
-                  </span>
+                  </p>
                 </div>
               </div>
             </SidebarMenuItem>

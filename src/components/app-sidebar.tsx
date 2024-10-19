@@ -1,4 +1,5 @@
 "use client";
+
 import {
   BrainCircuitIcon,
   CodeIcon,
@@ -36,6 +37,7 @@ import {
 } from "@radix-ui/react-icons";
 import { Separator } from "./ui/separator";
 import Link from "next/link";
+import { SignOutButton } from "@clerk/nextjs";
 
 // Menu items.
 const items = [
@@ -170,10 +172,12 @@ export function AppSidebar() {
                 className="w-[--radix-popper-anchor-width]"
               >
                 <DropdownMenuItem>
-                  <Button variant="ghost" className="flex items-center">
-                    Logout
-                    <LogOutIcon className="ml-2 size-4" />
-                  </Button>
+                  <SignOutButton redirectUrl="/">
+                    <Button variant="ghost" className="flex items-center">
+                      Logout
+                      <LogOutIcon className="ml-2 size-4" />
+                    </Button>
+                  </SignOutButton>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <div className="flex justify-center w-full">

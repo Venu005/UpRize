@@ -1,4 +1,5 @@
 "use server";
+
 import prisma from "../lib/db";
 import { CreateUser, UpdateUser } from "../types";
 
